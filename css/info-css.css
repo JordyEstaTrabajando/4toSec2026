@@ -1,0 +1,387 @@
+body {
+    overflow-x: hidden;
+}
+
+.seccion {
+    margin-bottom: 85px;
+}
+
+.etiqueta {
+    display: inline-block;
+    color: var(--color-primary);
+    background: var(--color-secondary);
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.titulo-seccion {
+    color: var(--color-title);
+    font-weight: 800;
+    letter-spacing: -0.7px;
+}
+
+.texto-seccion {
+    color: var(--color-text);
+    line-height: 1.9;
+}
+
+.banner-principal {
+    display: grid;
+    grid-template-columns: 58% 42%;
+    min-height: 440px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: var(--color-primary);
+}
+
+.banner-principal-imagen {
+    min-height: 440px;
+    overflow: hidden;
+}
+
+.banner-principal-imagen img {
+    width: 100%;
+    height: 100%;
+    min-height: 440px;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-principal-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 45px;
+    color: white;
+}
+
+.banner-principal-contenido h1 {
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.12;
+    margin: 25px 0;
+}
+
+.banner-principal-contenido h1 span {
+    color: #f5d49c;
+}
+
+.banner-principal-contenido p {
+    color: #dce5ff;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.banner-etiqueta {
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+.banner-informacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 340px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #f3f5fa;
+}
+
+.banner-informacion.imagen-derecha {
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner-informacion-imagen {
+    min-height: 340px;
+    overflow: hidden;
+}
+
+.banner-informacion-imagen img {
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.banner-informacion:hover .banner-informacion-imagen img {
+    transform: scale(1.04);
+}
+
+.banner-informacion-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.banner-informacion-contenido h2 {
+    color: var(--color-title);
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin: 18px 0;
+}
+
+.banner-informacion-contenido p {
+    color: var(--color-text);
+    line-height: 1.9;
+    font-size: 0.92rem;
+    margin-bottom: 12px;
+}
+
+.banner-informacion-contenido p:last-child {
+    margin-bottom: 0;
+}
+
+.imagen-derecha .banner-informacion-imagen {
+    order: 2;
+}
+
+.imagen-derecha .banner-informacion-contenido {
+    order: 1;
+}
+
+
+.objetivos-banner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    min-height: 380px;
+    overflow: hidden;
+    background: var(--color-primary);
+    border-radius: 5px;
+}
+
+.objetivos-imagen {
+    position: relative;
+    min-height: 380px;
+}
+
+.objetivos-imagen img {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    object-fit: cover;
+}
+
+.objetivos-contenido {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.objetivos-contenido h2 {
+    color: white;
+    font-weight: 800;
+    font-size: 1.9rem;
+    margin: 15px 0 25px;
+}
+
+.objetivos-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.objetivo-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.objetivo-item i {
+    color: #f5d49c;
+    font-size: 1.25rem;
+    margin-top: 2px;
+}
+
+.objetivo-item span {
+    color: #e0e8ff;
+    font-size: 0.87rem;
+    line-height: 1.6;
+}
+
+
+/* =================================
+           ETAPAS DEL PROYECTO
+        ================================= */
+
+.etapas-introduccion {
+    max-width: 650px;
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.etapa-card {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #f3f5fa;
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.etapa-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.etapa-imagen {
+    height: 210px;
+    overflow: hidden;
+}
+
+.etapa-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.etapa-card:hover .etapa-imagen img {
+    transform: scale(1.05);
+}
+
+.etapa-contenido {
+    padding: 25px;
+}
+
+.etapa-numero {
+    color: var(--color-primary);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.etapa-contenido h3 {
+    color: var(--color-title);
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin: 12px 0;
+}
+
+.etapa-contenido p {
+    color: var(--color-text);
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+
+/* =================================
+           IMPORTANCIA
+        ================================= */
+
+.importancia-banner {
+    position: relative;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    background:
+        linear-gradient(90deg,
+            rgba(12, 27, 71, 0.94) 0%,
+            rgba(12, 27, 71, 0.82) 55%,
+            rgba(12, 27, 71, 0.35) 100%),
+        url("../imgs/wallpaper3.avif") center/cover no-repeat;
+}
+
+.importancia-contenido {
+    max-width: 650px;
+    padding: 55px;
+}
+
+.importancia-contenido h2 {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+.importancia-contenido p {
+    color: #e0e8ff;
+    font-size: 0.95rem;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+
+    .banner-principal,
+    .banner-informacion,
+    .objetivos-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-principal-imagen {
+        min-height: 280px;
+        max-height: 300px;
+    }
+
+    .banner-principal-imagen img {
+        min-height: 280px;
+        max-height: 300px;
+    }
+
+    .banner-principal-contenido {
+        padding: 35px 25px;
+    }
+
+    .banner-principal-contenido h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner-informacion-imagen,
+    .banner-informacion-imagen img {
+        min-height: 250px;
+        max-height: 280px;
+    }
+
+    .banner-informacion-contenido {
+        padding: 30px 25px;
+    }
+
+    .imagen-derecha .banner-informacion-imagen {
+        order: 1;
+    }
+
+    .imagen-derecha .banner-informacion-contenido {
+        order: 2;
+    }
+
+    .objetivos-imagen,
+    .objetivos-imagen img {
+        min-height: 250px;
+        max-height: 280px;
+    }
+
+    .objetivos-contenido {
+        padding: 30px 25px;
+    }
+
+    .objetivos-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .importancia-contenido {
+        padding: 40px 25px;
+    }
+
+    .importancia-contenido h2 {
+        font-size: 1.8rem;
+    }
+
+    .seccion {
+        margin-bottom: 60px;
+    }
+}

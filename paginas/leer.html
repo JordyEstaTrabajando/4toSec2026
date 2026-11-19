@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,187 +6,180 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Detalles del Proyecto</title>
+        <title>Información</title>
 
-        <!-- Bootstrap 4.4.1 -->
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+        <!-- BOOTSTRAP -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
 
-        <!-- Bootstrap Icons -->
+        <!-- BOOTSTRAP ICONS -->
         <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <link rel="stylesheet" href="../css/general.css">
+
+        <!-- CSS-->
+        <link rel="stylesheet" href="../css/info-css.css">
+
+        <!-- BOOTSTRAP JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            defer></script>
+
     </head>
 
-    <body class="bg-light">
+    <body>
 
         <!-- HEADER -->
-        <header class="bg-dark text-white">
+        <header>
 
-            <div
-                class="container-fluid d-flex align-items-center justify-content-between p-3">
+            <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
 
-                <a href="../index.html"
-                    class="text-white text-decoration-none d-inline-flex align-items-center gap-2">
-                    <i class="bi bi-house-fill h3 mb-0"></i>
-                    <span class="h4 mb-0 ml-3">University College</span>
-                </a>
+                <div class="container">
 
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-white"
-                                href="leer.html">Leer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Permiso</a>
-                        </li>
-                    </ul>
-                </nav>
+                    <a class="navbar-brand d-flex align-items-center gap-2"
+                        href="../index.html">
 
-            </div>
+                        <i class="bi bi-mortarboard-fill fs-4"></i>
+
+                        <span class="d-flex align-items-baseline gap-1">
+                            <span class="fw-bold fs-5 text-dark">
+                                University College
+                            </span>
+                            <small class="text-muted">2026</small>
+                        </span>
+
+                    </a>
+
+                    <!-- BTN RESPONSIVE -->
+                    <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarPrincipal"
+                        aria-controls="navbarPrincipal"
+                        aria-expanded="false"
+                        aria-label="Abrir menú">
+
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+                    <!-- NAVEGACIÓN -->
+                    <div class="collapse navbar-collapse"
+                        id="navbarPrincipal">
+
+                        <ul class="navbar-nav ms-auto gap-lg-3">
+
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="../index.html">
+                                    Inicio
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="../index.html#proyectos">
+                                    Proyectos
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active fw-semibold"
+                                    aria-current="page"
+                                    href="leer.html">
+                                    Información
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </nav>
 
         </header>
 
         <!-- CONTENIDO PRINCIPAL -->
-        <main class="container py-5">
+        <main class="container py-4 py-md-5">
 
-            <!-- PRESENTACIÓN -->
-            <section class="text-center mb-5">
+            <!-- 1. PRESENTACIÓN -->
+            <section class="banner-principal seccion">
 
-                <h1 class="display-4 font-weight-bold">
-                    ¿En qué consiste nuestro trabajo?
-                </h1>
+                <div class="banner-principal-imagen">
 
-                <p class="lead text-muted">
-                    Conoce el proceso detrás de los proyectos desarrollados
-                    por los estudiantes de 4.º de secundaria.
-                </p>
-
-            </section>
-
-            <!-- DESCRIPCIÓN GENERAL -->
-            <section class="card shadow-sm mb-4">
-
-                <div class="card-body p-4">
-
-                    <h2 class="h3 mb-3">
-                        <i class="bi bi-info-circle-fill text-primary"></i>
-                        Descripción del trabajo
-                    </h2>
-
-                    <p class="text-justify">
-                        Este trabajo consiste en desarrollar proyectos
-                        utilizando
-                        los conocimientos y herramientas tecnológicas aprendidas
-                        durante las clases de computación. Los estudiantes deben
-                        poner en práctica sus habilidades, creatividad y
-                        capacidad
-                        para resolver problemas mediante la elaboración de
-                        propuestas propias.
-                    </p>
-
-                    <p class="text-justify mb-0">
-                        A través de esta actividad, cada estudiante o grupo
-                        tendrá
-                        la oportunidad de presentar un proyecto, explicar su
-                        funcionamiento y demostrar el proceso que siguió para
-                        desarrollarlo.
-                    </p>
+                    <img src="../imgs/wallpaper.jpg"
+                        alt="Entorno de aprendizaje y tecnología">
 
                 </div>
 
-            </section>
+                <div class="banner-principal-contenido">
 
-            <!-- OBJETIVOS -->
-            <section class="card shadow-sm mb-4">
+                    <span class="banner-etiqueta">
+                        4.º SECUNDARIA · 2026
+                    </span>
 
-                <div class="card-body p-4">
-
-                    <h2 class="h3 mb-3">
-                        <i class="bi bi-bullseye text-danger"></i>
-                        Objetivos
-                    </h2>
-
-                    <ul>
-                        <li>
-                            Aplicar los conocimientos adquiridos durante las
-                            clases de computación.
-                        </li>
-
-                        <li>
-                            Desarrollar la creatividad y el pensamiento lógico.
-                        </li>
-
-                        <li>
-                            Fomentar la autonomía y la resolución de problemas.
-                        </li>
-
-                        <li>
-                            Aprender a organizar y presentar un proyecto.
-                        </li>
-
-                        <li>
-                            Fortalecer las habilidades de comunicación y
-                            trabajo en equipo.
-                        </li>
-                    </ul>
-
-                </div>
-
-            </section>
-
-            <!-- DESARROLLO -->
-            <section class="card shadow-sm mb-4">
-
-                <div class="card-body p-4">
-
-                    <h2 class="h3 mb-3">
-                        <i class="bi bi-gear-fill text-success"></i>
-                        Desarrollo del proyecto
-                    </h2>
+                    <h1>
+                        Por cada alumno que lo intenta,
+                        <span>hay un mundo de posibilidades</span>
+                    </h1>
 
                     <p>
-                        Para realizar el trabajo, los estudiantes deberán
-                        considerar las siguientes etapas:
+                        Conoce el trabajo de los alumnos, descubre sus proyectos
+                        y aprende sobre
+                        cómo desarrollaron sus ideas utilizando la tecnología y
+                        la creatividad.
                     </p>
 
-                    <div class="row text-center">
+                </div>
 
-                        <div class="col-12 col-md-4 mb-3">
-                            <div class="bg-light rounded p-3 h-100">
-                                <i
-                                    class="bi bi-lightbulb-fill display-4 text-warning"></i>
-                                <h3 class="h5 mt-2">1. Planificación</h3>
-                                <p class="mb-0">
-                                    Elegir una idea, definir su propósito
-                                    y organizar las actividades.
-                                </p>
-                            </div>
-                        </div>
+            </section>
 
-                        <div class="col-12 col-md-4 mb-3">
-                            <div class="bg-light rounded p-3 h-100">
-                                <i
-                                    class="bi bi-laptop-fill display-4 text-primary"></i>
-                                <h3 class="h5 mt-2">2. Elaboración</h3>
-                                <p class="mb-0">
-                                    Desarrollar el proyecto utilizando
-                                    las herramientas tecnológicas aprendidas.
-                                </p>
-                            </div>
-                        </div>
+            <!-- 2. DESCRIPCIÓN -->
+            <section class="seccion">
 
-                        <div class="col-12 col-md-4 mb-3">
-                            <div class="bg-light rounded p-3 h-100">
-                                <i
-                                    class="bi bi-easel-fill display-4 text-success"></i>
-                                <h3 class="h5 mt-2">3. Presentación</h3>
-                                <p class="mb-0">
-                                    Exponer el resultado y explicar
-                                    cómo se realizó el trabajo.
-                                </p>
-                            </div>
-                        </div>
+                <div class="banner-informacion">
+
+                    <div class="banner-informacion-imagen">
+
+                        <img src="../imgs/wallpaper2.jfif"
+                            alt="Estudiantes aprendiendo y desarrollando ideas">
+
+                    </div>
+
+                    <div class="banner-informacion-contenido">
+
+                        <span class="etiqueta">
+                            CONOCE EL PROYECTO
+                        </span>
+
+                        <h2>
+                            ¿En qué consiste nuestro trabajo?
+                        </h2>
+
+                        <p>
+                            Durante el año escolar, los estudiantes de 4.º de
+                            secundaria han aprendido y aplicado conocimientos de
+                            desarrllo web.
+                            Se invito a quienes participaron a crear un proyecto
+                            propio, utilizando las herramientas y habilidades
+                            adquiridas en clase.
+                        </p>
+
+                        <p>
+                            Aprendieron HTML y CSS, para crear sus propias
+                            páginas web, también exploraron conceptos de diseño
+                            y maquetado.
+                        </p>
+
+                        <p>
+                            Con la esperanza de fomentar el uso de la tecnología
+                            y la creatividad, los estudiantes desarrollaron
+                            proyectos que reflejan sus intereses y habilidades.
+                        </p>
 
                     </div>
 
@@ -193,52 +187,331 @@
 
             </section>
 
-            <!-- IMPORTANCIA -->
-            <section class="card shadow-sm mb-4">
+            <!-- 3. OBJETIVOS -->
+            <section class="seccion">
 
-                <div class="card-body p-4">
+                <div class="objetivos-banner">
 
-                    <h2 class="h3 mb-3">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        ¿Por qué es importante?
+                    <div class="objetivos-imagen">
+
+                        <img src="../imgs/wallpaper3.avif"
+                            alt="Creatividad e innovación tecnológica">
+
+                    </div>
+
+                    <div class="objetivos-contenido">
+
+                        <span class="banner-etiqueta">
+                            LO QUE SE HA BUSCADO
+                        </span>
+
+                        <h2>
+                            Objetivos de esta experiencia
+                        </h2>
+
+                        <div class="objetivos-lista">
+
+                            <div class="objetivo-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>
+                                    Aplicar los conocimientos adquiridos
+                                    durante las clases de Computación.
+                                </span>
+                            </div>
+
+                            <div class="objetivo-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>
+                                    Desarrollar la creatividad y el
+                                    pensamiento lógico.
+                                </span>
+                            </div>
+
+                            <div class="objetivo-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>
+                                    Fomentar el desarrollo de habilidades
+                                    tecnológicas y de diseño.
+                                </span>
+                            </div>
+
+                            <div class="objetivo-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>
+                                    Aprender a organizar y presentar
+                                    un proyecto.
+                                </span>
+                            </div>
+
+                            <div class="objetivo-item">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>
+                                    Demostrarles que ellos son capaces de crear
+                                    y desarrollar sus propias ideas.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccion">
+
+                <div class="mb-4">
+
+                    <span class="etiqueta">
+                        NUESTRO PROCESO
+                    </span>
+
+                    <h2 class="titulo-seccion mt-3 mb-2">
+                        ¿Cómo desarrollamos los proyectos?
                     </h2>
 
-                    <p class="text-justify mb-0">
-                        Más allá de obtener una calificación, este trabajo busca
-                        que los estudiantes demuestren lo que son capaces de
-                        crear
-                        con los conocimientos adquiridos. Cada proyecto
-                        representa
-                        una oportunidad para experimentar, equivocarse, aprender
-                        y mejorar. Lo importante no es solamente el resultado
-                        final, sino también el esfuerzo y el aprendizaje durante
-                        todo el proceso.
+                    <p class="etapas-introduccion">
+                        En general, durante el año se plantearon 3 etapas para
+                        el desarrollo de los proyectos, cada una con su propio
+                        enfoque y objetivos.
                     </p>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- ETAPA 1 -->
+                    <div class="col-12 col-md-4">
+
+                        <article class="etapa-card">
+
+                            <div class="etapa-imagen">
+
+                                <img src="../imgs/wallpaper.jpg"
+                                    alt="Planificación de ideas">
+
+                            </div>
+
+                            <div class="etapa-contenido">
+
+                                <span class="etapa-numero">
+                                    ETAPA 01
+                                </span>
+
+                                <h3>
+                                    <i
+                                        class="bi bi-lightbulb-fill me-2 text-primary"></i>
+                                    Aprendiendo HTML
+                                </h3>
+
+                                <p>
+                                    Se les enseñó a los estudiantes los
+                                    conceptos básicos de HTML, para que
+                                    pudieran añadir contenido a sus propias
+                                    páginas web.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <!-- ETAPA 2 -->
+                    <div class="col-12 col-md-4">
+
+                        <article class="etapa-card">
+
+                            <div class="etapa-imagen">
+
+                                <img src="../imgs/wallpaper2.jfif"
+                                    alt="Elaboración de proyectos tecnológicos">
+
+                            </div>
+
+                            <div class="etapa-contenido">
+
+                                <span class="etapa-numero">
+                                    ETAPA 02
+                                </span>
+
+                                <h3>
+                                    <i
+                                        class="bi bi-laptop-fill me-2 text-primary"></i>
+                                    Aprendiendo CSS
+                                </h3>
+
+                                <p>
+                                    Durante la segunda mitad del año, los
+                                    estudiantes aprendieron CSS, para
+                                    poder dar estilo a sus páginas web y
+                                    hacerlas más atractivas visualmente.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <!-- ETAPA 3 -->
+                    <div class="col-12 col-md-4">
+
+                        <article class="etapa-card">
+
+                            <div class="etapa-imagen">
+
+                                <img src="../imgs/wallpaper3.avif"
+                                    alt="Presentación de proyectos">
+
+                            </div>
+
+                            <div class="etapa-contenido">
+
+                                <span class="etapa-numero">
+                                    ETAPA 03
+                                </span>
+
+                                <h3>
+                                    <i
+                                        class="bi bi-brush-fill me-2 text-primary"></i>
+                                    Maquetado y Diseño
+                                </h3>
+
+                                <p>
+                                    Finalmente, los estudiantes aprendieron a
+                                    maquetar y diseñar sus páginas web, para
+                                    que fueran más atractivas y funcionales.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
 
                 </div>
 
             </section>
 
-            <!-- BOTÓN DE REGRESO -->
-            <div class="text-center mt-5">
+            <!-- 5. IMPORTANCIA -->
+            <section class="seccion">
 
-                <a href="../index.html" class="btn btn-primary btn-lg">
-                    <i class="bi bi-arrow-left"></i>
-                    Volver a los proyectos
-                </a>
+                <div class="importancia-banner">
 
-            </div>
+                    <div class="importancia-contenido">
+
+                        <span class="banner-etiqueta">
+                            APRENDER HACIENDO
+                        </span>
+
+                        <h2>
+                            Lo importante no es solamente el resultado.
+                        </h2>
+
+                        <p>
+                            Más allá de obtener una calificación, este trabajo
+                            busca que los estudiantes demuestren lo que son
+                            capaces de crear con los conocimientos adquiridos.
+                            Cada proyecto representa una oportunidad para
+                            experimentar, equivocarse, aprender y mejorar.
+
+                            Lo importante no es solamente el resultado final,
+                            sino también el esfuerzo y el aprendizaje durante
+                            todo el proceso. <b><i>Aprender es arriesgarse, pero es
+                            ahí donde esta el verdadero aprendizaje</i></b>.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
 
         </main>
 
         <!-- FOOTER -->
-        <footer class="bg-dark text-white text-center py-3">
+        <footer class="bg-dark text-white">
 
-            <p class="mb-0">
-                Todos los derechos reservados &copy; 2026
-            </p>
+            <div class="container py-5">
+
+                <div class="row g-4">
+
+                    <!-- REDES -->
+                    <div class="col-12 col-md-5">
+
+                        <h4 class="fw-bold mb-3">
+                            <i class="bi bi-laptop me-2"></i>
+                            Visita Nuestras Redes
+                        </h4>
+
+                        <p class="text-white-50 mb-3">
+                            Te invitamos a seguirnos en nuestras redes sociales
+                            para mantenerte informado de las últimas novedades,
+                            proyectos y actividades de nuestra institución
+                            educativa.
+                        </p>
+
+                        <div class="d-flex gap-3">
+
+                            <a href="#"
+                                class="text-white fs-4"
+                                aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+
+                            <a href="#"
+                                class="text-white fs-4"
+                                aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+
+                            <a href="#"
+                                class="text-white fs-4"
+                                aria-label="TikTok">
+                                <i class="bi bi-tiktok"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CONTACTO -->
+                    <div class="col-12 col-md-3">
+
+                        <h5 class="fw-semibold mb-3">
+                            Contacto
+                        </h5>
+
+                        <p class="text-white-50 mb-2">
+                            <i class="bi bi-telephone me-2"></i>
+                            Teléfono: xd
+                        </p>
+
+                        <p class="text-white-50 mb-2">
+                            <i class="bi bi-envelope me-2"></i>
+                            Email: xd
+                        </p>
+
+                    </div>
+
+                    <!-- UBICACIÓN -->
+                    <div class="col-12 col-md-4">
+
+                        <h5 class="fw-semibold mb-3">
+                            Ubicación
+                        </h5>
+
+                        <p class="text-white-50">
+                            <i class="bi bi-geo-alt me-2"></i>
+                            Dirección institucional: xd
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </footer>
 
     </body>
+
 </html>
